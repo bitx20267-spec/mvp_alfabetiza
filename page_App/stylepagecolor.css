@@ -1,0 +1,21 @@
+:root{
+    --cor-fundo-top: #1065AE;
+    --cor-fundo-bottom: #0b2e4a;
+    --caixa-texto: #f2eeee;
+    --texto-escuro: #000000;
+    --texto-claro: #ffffff;
+    --cor-botao1: #44f0b9;
+    --cor-botao2: #8bb4d5;
+    --cor-alerta: #f04444;
+    --cor-atencao: #f0e144;
+    font-family: 'Arial', sans-serif, Helvetica, Roboto, Inter, Verdana, Tahoma;
+}
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, var(--cor-fundo-top), var(--cor-fundo-bottom));
+
+}
