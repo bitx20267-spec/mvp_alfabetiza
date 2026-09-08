@@ -1,21 +1,406 @@
-:root{
+:root {
+
     --cor-fundo-top: #1065AE;
     --cor-fundo-bottom: #0b2e4a;
+
     --caixa-texto: #f2eeee;
+
     --texto-escuro: #000000;
     --texto-claro: #ffffff;
+
     --cor-botao1: #44f0b9;
     --cor-botao2: #8bb4d5;
+
     --cor-alerta: #f04444;
     --cor-atencao: #f0e144;
-    font-family: 'Arial', sans-serif, Helvetica, Roboto, Inter, Verdana, Tahoma;
+
+    font-family: Arial, sans-serif, Helvetica, Roboto, Inter, Verdana, Tahoma;
 }
-*{
+
+
+
+* {
     margin: 0;
-    padding: 5px;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(to bottom, var(--cor-fundo-top), var(--cor-fundo-bottom));
 
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        var(--cor-fundo-top),
+        var(--cor-fundo-bottom)
+    );
+
+    color: var(--texto-claro);
+}
+
+
+/* ÁREA DO LOGIN*/
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/*CAIXA DO LOGIN*/
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 40px;
+
+    background-color: var(--caixa-texto);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+    color: var(--texto-escuro);
+}
+
+
+/*CABEÇALHO*/
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 700;
+
+    color: var(--cor-fundo-top);
+
+    margin-bottom: 18px;
+}
+
+.login-title {
+    font-size: 21px;
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+.login-description {
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* FORMULÁRIO*/
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    background-color: #ffffff;
+
+    border: 2px solid var(--cor-botao2);
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    color: var(--texto-escuro);
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: var(--cor-fundo-top);
+
+    box-shadow: 0 0 0 3px rgba(16, 101, 174, 0.15);
+}
+
+
+/* OPÇÕES*/
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+}
+
+.remember-me input {
+    accent-color: var(--cor-fundo-top);
+}
+
+.forgot-password {
+    color: var(--cor-fundo-top);
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* BOTÃO ENTRAR*/
+
+.login-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: var(--cor-botao1);
+
+    color: var(--texto-escuro);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background-color: var(--cor-botao2);
+
+    transform: translateY(-1px);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+
+/* CADASTRO*/
+
+.login-footer {
+    text-align: center;
+
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #d5d5d5;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.register-link {
+    color: var(--cor-fundo-top);
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 30px 22px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .login-title {
+        font-size: 19px;
+    }
+
+}
+
+/* =========================
+   PÁGINA DE CADASTRO
+========================= */
+
+.cadastro-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CARD DE CADASTRO
+========================= */
+
+.cadastro-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 40px;
+
+    background-color: var(--caixa-texto);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+    color: var(--texto-escuro);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cadastro-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.cadastro-title {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.cadastro-description {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================
+   BOTÃO CADASTRAR
+========================= */
+
+.cadastro-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: var(--cor-botao1);
+
+    color: var(--texto-escuro);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.cadastro-button:hover {
+    background-color: var(--cor-botao2);
+
+    transform: translateY(-1px);
+}
+
+.cadastro-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.cadastro-footer {
+    text-align: center;
+
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #d5d5d5;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.login-link {
+    color: var(--cor-fundo-top);
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
 }
