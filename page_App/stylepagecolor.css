@@ -404,3 +404,133 @@ body {
 .login-link:hover {
     text-decoration: underline;
 }
+
+/* =========================
+   PÁGINA DE RECUPERAÇÃO
+========================= */
+
+.recuperacao-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.recuperacao-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 40px;
+
+    background-color: var(--caixa-texto);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+    color: var(--texto-escuro);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.recuperacao-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.recuperacao-title {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.recuperacao-description {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.recuperacao-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.recuperacao-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: var(--cor-botao1);
+
+    color: var(--texto-escuro);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.recuperacao-button:hover {
+    background-color: var(--cor-botao2);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   VOLTAR PARA LOGIN
+========================= */
+
+.recuperacao-footer {
+    text-align: center;
+
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #d5d5d5;
+}
+
+.back-login {
+    color: var(--cor-fundo-top);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.back-login:hover {
+    text-decoration: underline;
+}
