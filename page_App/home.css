@@ -1,0 +1,165 @@
+:root {
+    --cor-fundo-top: #177ea4;
+    --cor-fundo-bottom: #0f3f67;
+    --caixa-texto: #f2eeee;
+    --texto-escuro: #000000;
+    --texto-claro: #ffffff;
+    --cor-botao1: #469CB8;
+    --cor-botao2: #173E56;
+    --cor-botao3: hsl(207, 47%, 69%);
+    --cor-alerta1: #f04444;
+    --cor-alerta2: #78f044;
+
+    font-family: 'Arial', sans-serif, Helvetica, Roboto, Inter, Verdana, Tahoma;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+header {
+    align-content: center;
+    width: 100%;
+    position:fixed;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+
+#cabecalho {
+
+    background-image: linear-gradient(to bottom, var(--cor-fundo-top), var(--cor-fundo-bottom));
+    padding: 5px;
+    color: var(--texto-claro);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.avatar {
+    text-align: center;
+}
+
+.person {
+    width: 50px;
+}
+
+.help {
+    text-align: center;
+    margin-left: 50%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--texto-escuro), var(--cor-fundo-top));
+    display: flex;    
+    flex-direction: column;
+    /* padding-left: 16%; */
+    /* padding-right: 4%; */
+
+}
+
+#titulo {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+main {
+    margin-top: 125px;
+    color: var(--texto-claro);
+    font: Inter;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    width: auto;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+.opcaoCurso {
+    margin: 0;
+}
+
+.opcaoCurso p {
+    font-size: 16px;
+    font: Inter;
+    font-weight: bold;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--cor-fundo-top);
+    box-shadow: inset 4px 4px 10px var(--cor-fundo-bottom), inset -4px -4px 8px var(--texto-escuro);
+}
+
+button {
+    font-size: 15px;
+    font-weight: normal;
+    height: 50px;
+    box-shadow: 2px 3px 8px var(--cor-fundo-bottom);
+    cursor: pointer;
+    color: var(--texto-claro);
+    margin: 2px;
+    background-color: var(--cor-fundo-top);
+    border-radius: 20px;
+    padding: 3px 8px 3px 8px;
+   
+}
+
+button:hover {
+    border-color: var(--cor-alerta1);
+    border-width: 2px;
+}
+
+button:active {
+    border-color: var(--cor-alerta2);
+}
+
+.opcoes:hover {
+    background-color: var(--cor-botao1);
+}
+
+section.caixaTexto {
+    background-color: var(--caixa-texto);
+    width: auto;
+    height: 350px;
+    color: var(--texto-escuro);
+    margin: 5px 5px 10px 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 8px var(--cor-fundo-bottom), inset -2px -2px 8px var(--cor-fundo-bottom);
+
+}
+
+ul.lista {
+    font-size: 16px;
+}
+
+nav ul.menu {
+
+    background-color: var(--cor-fundo-top);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: inset 2px 3px 8px var(--cor-fundo-bottom), inset -3px -3px 6px var(--cor-fundo-bottom);
+}
+
+nav ul.menu li a:hover {
+
+    text-shadow: 2px 2px 8px #000000;
+}
